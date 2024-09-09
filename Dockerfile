@@ -6,4 +6,4 @@ RUN pip install -r requirements.txt
 
 COPY ./src /app
 
-ENTRYPOINT [ "uvicorn", "reogate.main:app", "--host", "0.0.0.0", "--port", "8000" ]
+ENTRYPOINT [ "uvicorn", "reogate.main:app", "--host", "0.0.0.0", "--port", "8000", "--log-config", "../logging.yaml" ]
