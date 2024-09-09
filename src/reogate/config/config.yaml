@@ -1,5 +1,11 @@
 # Description: Configuration file for the Reogate application
 
+#Url which will be used by cameras to send event data.
+#This should be the url of the Reogate application.
+#Host is the ip address of the machine where the Reogate application is running.
+#Port 8080 is default external port of docker container in Reogate Dockerfile.
+#If you are running the application on a different port, change the port number.
+webhook_url: "http://hostname:8080/"
 cameras:
 #change the name, ip, port, username and password to match your cameras
   - name: "camera1"
