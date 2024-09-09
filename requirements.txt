@@ -1,2 +1,5 @@
 fastapi
 reolink_aio
+pydantic-settings
+pyyaml
+uvicorn
