@@ -1,0 +1,14 @@
+# Description: Configuration file for the Reogate application
+
+cameras:
+#change the name, ip, port, username and password to match your cameras
+  - name: "camera1"
+    ip: "192.168.1.200"
+    port: 80
+    username: "admin"
+    password: "admin"
+  - name: "camera2"
+    ip: "192.168.1.201"
+    port: 80
+    username: "admin"
+    password: "admin"
