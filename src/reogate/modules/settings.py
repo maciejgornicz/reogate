@@ -13,12 +13,14 @@ class CameraSettings(BaseModel):
 
 class Settings(BaseSettings):
     cameras: list[CameraSettings]
+    webhook_url: str
 
     @classmethod
     def from_yaml(cls, file_path: str):
         with open(file_path, 'r') as file:
-            data = yaml.safe_load(file)
-        return cls(**data)
+            config = yaml.safe_load(file)
+
+        return cls(**config)
 
 
 settings = Settings.from_yaml('reogate/config/config.yaml')
